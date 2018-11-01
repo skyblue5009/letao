@@ -31,9 +31,10 @@ $(function(){
     //模态框的实现
     $('.lt_main .icon_logout').click(function(){
 
-      $('#logoutModal').modal('show');
+      // $('#logoutModal').modal('show');
+      
     //退出要请求服务器  销毁登陆状态
-    $('#logoutModal').click(function(){
+    $('#myModal').click(function(){
 
           $.ajax({
              type:"get",
