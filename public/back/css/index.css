@@ -1,0 +1,141 @@
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+
+
+}
+ul{
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+
+
+
+
+/* 侧边栏部分 */
+
+.lt_aside{
+  position:fixed;
+  left:0;
+  top:0;
+  background-color: #222D32;
+  height: 100%;
+  width:180px;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu{
+     left:-180px;
+}
+.lt_aside .brand a{
+     display: block;
+     text-align: center;
+     line-height: 50px;
+     font-size: 20px;
+     color:#fff;
+     height: 50px;
+     width:180px;
+     background:#367FA9;
+}
+.lt_aside .user{
+     height: 180px;
+     width:180px;
+     padding-top:20px;
+     text-align: center;
+}
+.lt_aside .user img{
+     height: 80px;
+     width:80px;
+     border-radius: 50%;
+     display: block;
+     margin:0 auto;
+}
+.lt_aside .user p{
+       color:#fff;
+       margin-top:10px;
+} 
+
+.lt_aside .nav a{
+       color:#fff;
+}
+
+
+.lt_aside .nav a{
+     display: block;
+     height: 40px;
+     width:180px;
+     text-align: center;
+     line-height: 40px;
+     border-left:3px solid transparent;
+}
+.lt_aside .nav a.active {
+  background-color: #1D1F21;
+  border-left: 3px solid #069;
+}
+.lt_aside .nav i{
+  margin-right:5px;
+}
+.lt_aside .nav .child{
+  display: none;
+}
+.lt_aside .nav .child a{
+     padding-left:43px;
+}
+
+.lt_main{
+     padding-left:180px;
+     transition:all 1s;
+}
+.lt_main.hidemenu{
+  padding-left:0;
+}
+
+/* 主体部分 */
+.lt_main{
+     
+     padding-left:180px;
+     padding-top:50px;
+     height: 1000px;
+}
+.lt_main .lt_topbar {
+     position:fixed;
+     top:0;
+     left:0;
+     height: 50px;
+     width:100%;
+     background:#3C8DBC;
+     padding-left:180px;
+     z-index: 666;
+     transition:all 1s;
+}
+
+.lt_topbar.hidemenu{
+     padding-left:0;
+}
+.lt_main .lt_topbar .icon_menu,
+.lt_main .lt_topbar .icon_logout{
+     color:#fff;
+     display: block;
+     text-align: center;
+     line-height: 50px;
+     height: 50px;
+     width:50px;
+     font-size: 20px;
+}
+
+.lt_content{
+  padding:20px;
+ 
+}
+
+/* 需要准备两个具备宽高的容器 */
+.lt_content .echarts_left,
+.lt_content .echarts_right {
+  width: 48%;
+  height: 400px;
+  background-color: skyblue;
+}

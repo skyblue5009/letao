@@ -27,14 +27,14 @@
                        <ul>
                          <!-- 第一行 -->
                          <li>
-                            <a class="active" href="user.html"><i class="glyphicon glyphicon-user"  ></i><span>用户管理</span></a>
+                            <a  href="user.html"><i class="glyphicon glyphicon-user"  ></i><span>用户管理</span></a>
                          </li>
                         <!-- 第二行 -->
                           <li>
                               <a  href="javascript:;" class="category"><i class="glyphicon glyphicon-list"></i><span>分类管理</span></a>
                               <!-- 二级导航 -->
                               <div class="child" >
-                                   <a href="first.html">一级分类</a>
+                                   <a class="active" href="first.html">一级分类</a>
                                    <a href="second.html">二级分类</a>
                               </div>
                           </li>
@@ -47,9 +47,9 @@
             </div>
 
         <!-- 主体部分 -->
-           <div class="lt_main" >
-                 <div class="lt_topbar" >
-                      <a href="#" class="pull-left icon_menu"><i class="glyphicon glyphicon-align-justify"></i></a>
+            <div class="lt_main" >
+                  <div class="lt_topbar" >
+                      <a  href="#" class="pull-left icon_menu"><i class="glyphicon glyphicon-align-justify"></i></a>
                       <!-- data-toggle="modal" data-target="#logoutModal"  -->
                       <a href="#" class="pull-right icon_logout"><i class="glyphicon glyphicon-log-out"></i></a>
                   </div>
@@ -61,50 +61,15 @@
                           <li><a href="#">管理系统</a></li>
                           <li><a href="#">用户管理</a></li>
                           <li class="active">Data</li>
-                      </ol>
+                        </ol>
 
-                      <div class="content">
-
-                          <div class="echarts_left pull-left"></div>
-                    
-                          <div class="echarts_right pull-right"></div>
-                    
-                      </div>
-                    
+                      
                   </div>
             </div>
-
-            <!-- 退出模态框 -->
-            <!-- 外层是蒙层, 内层才是真实的模态框 -->
-            <div id="logoutModal" class="modal fade" tabindex="-1">
-                <!-- modal-sm 小   modal-lg 大    默认中等  -->
-                <div class="modal-dialog modal-sm">
-              
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title">温馨提示</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p class="red"><i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                      <button type="button" class="btn btn-primary" id="logoutBtn">退出</button>
-                    </div>
-                  </div>
-              
-                </div>
-              </div>
-                     
-
         <script src="./lib/jquery/jquery.min.js" ></script>
         <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
         <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
         <script src="./lib/nprogress/nprogress.js"></script>
-        <script src="./lib/echarts/echarts.min.js"></script>
-        <script src="./js/checkLogin.js" ></script>
-        <script src="./js/comment.js" ></script>
         <script src="./js/index.js" ></script>    
 
 </body>
